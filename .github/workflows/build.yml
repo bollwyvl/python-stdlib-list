@@ -44,6 +44,7 @@ jobs:
     needs: [build]
     strategy:
       matrix:
+        fail-fast: false
         platform:
           - macos-latest
           - ubuntu-latest
