@@ -43,8 +43,8 @@ jobs:
     runs-on: ${{ matrix.platform }}
     needs: [build]
     strategy:
+      fail-fast: false
       matrix:
-        fail-fast: no
         platform:
           - macos-latest
           - ubuntu-latest
